@@ -1,6 +1,6 @@
 package com.example.recipesapp
 
-
+/*
 import android.content.Intent
 import android.os.Bundle
 import android.widget.SearchView
@@ -92,3 +92,74 @@ class MainActivity : AppCompatActivity(), MealAdapter.OnItemClickListener {
     }
 }
 
+ */
+
+import android.content.Context
+import android.content.Intent
+import android.content.SharedPreferences
+import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var sharedPreferences: SharedPreferences
+    private lateinit var usernameEditText: EditText
+    private lateinit var passwordEditText: EditText
+    private lateinit var loginButton: Button
+    private lateinit var registerButton: Button
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+
+        usernameEditText = findViewById(R.id.usernameEditText)
+        passwordEditText = findViewById(R.id.passwordEditText)
+        loginButton = findViewById(R.id.loginButton)
+        registerButton = findViewById(R.id.registerButton)
+
+
+        val isLoggedIn = sharedPreferences.getBoolean("isLoggedIn", false)
+
+        if (isLoggedIn) {
+            navigateToWelcomeScreen()
+        }
+
+        loginButton.setOnClickListener {
+            val username = usernameEditText.text.toString()
+            val password = passwordEditText.text.toString()
+
+            if (username.isEmpty() || password.isEmpty()) {
+                Toast.makeText(this, "Username or password cannot be empty", Toast.LENGTH_SHORT).show()
+            } else {
+                // Check if the user is registered
+                val storedPassword = sharedPreferences.getString(username, "")
+
+                if (password == storedPassword) {
+                    // If username and password match, navigate to welcome screen
+                    sharedPreferences.edit().putBoolean("isLoggedIn", true).apply()
+                    sharedPreferences.edit().putString("username", username).apply()
+                    navigateToWelcomeScreen()
+                } else {
+                    Toast.makeText(this, "Invalid username or password", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+
+        registerButton.setOnClickListener {
+            // Open RegisterActivity when register button is clicked
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun navigateToWelcomeScreen() {
+        val intent = Intent(this, WelcomeActivity::class.java)
+        startActivity(intent)
+        finish()
+    }
+}

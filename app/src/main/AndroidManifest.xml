@@ -24,6 +24,12 @@
         <activity android:name=".MealDetailsActivity">
 
         </activity>
+        <activity android:name=".RegisterActivity">
+
+        </activity>
+        <activity android:name=".WelcomeActivity">
+
+        </activity>
     </application>
 
 </manifest>

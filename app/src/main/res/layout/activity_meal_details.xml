@@ -6,13 +6,16 @@
     android:layout_height="match_parent"
     android:padding="16dp">
 
+    <!-- Meal Image -->
     <ImageView
         android:id="@+id/mealImageView"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:scaleType="centerCrop"
-        />
+        android:layout_marginBottom="16dp"
+         />
 
+    <!-- Meal Name -->
     <TextView
         android:id="@+id/mealNameTextView"
         android:layout_width="wrap_content"
@@ -20,55 +23,67 @@
         android:layout_below="@id/mealImageView"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:text="Meal Title" />
+        tools:text="Meal Title"
+        android:layout_marginBottom="8dp" />
 
+    <!-- Category -->
     <TextView
         android:id="@+id/catLabelTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/mealNameTextView"
+        android:layout_below="@id/mealNameTextView"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:text="Category:" />
+        android:text="Category:"
+        android:layout_marginTop="16dp"/>
+
     <TextView
         android:id="@+id/categoryTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/catLabelTextView"
+        android:layout_toEndOf="@id/catLabelTextView"
+        android:layout_below="@id/mealNameTextView"
         android:textSize="18sp"
-        tools:text="Category: Unknown" />
+        tools:text="Unknown"
+        android:layout_marginTop="16dp"/>
 
-
+    <!-- Area -->
     <TextView
         android:id="@+id/areaLabelTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/categoryTextView"
+        android:layout_below="@id/catLabelTextView"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:text="Area:" />
+        android:text="Area:"
+        android:layout_marginTop="8dp"/>
 
     <TextView
         android:id="@+id/areaTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/areaLabelTextView"
+        android:layout_toEndOf="@id/areaLabelTextView"
+        android:layout_below="@id/categoryTextView"
         android:textSize="18sp"
-        tools:text="Area: Unknown" />
+        tools:text="Unknown"
+        android:layout_marginTop="8dp"/>
 
+    <!-- Instructions -->
     <TextView
         android:id="@+id/instructionsLabelTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/areaTextView"
+        android:layout_below="@id/areaTextView"
         android:text="Instructions:"
         android:textSize="18sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/instructionsLabelTextView">
+        android:layout_below="@id/instructionsLabelTextView"
+        >
 
         <!-- Actual instructions TextView -->
         <TextView
@@ -78,4 +93,5 @@
             android:textSize="18sp"
             tools:text="Instructions: Unknown" />
     </ScrollView>
+
 </RelativeLayout>
