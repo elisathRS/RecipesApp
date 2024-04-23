@@ -50,3 +50,37 @@ The Recipe Explorer App is a user-friendly platform designed to help users disco
   - => Users can create accounts and log into the app. 
 
 This spec outlines the core functionality and features of the Recipe Explorer App, designed to offer users a seamless and immersive experience in discovering, exploring, and experimenting with a wide variety of culinary delights.
+
+
+This spec outlines the core functionality and features of the Petfinder App, aiming to create a seamless and engaging experience for users looking to adopt pets or provide babysitting services.
+## Wireframes
+
+<!-- Add picture of your hand sketched wireframes in this section -->
+
+
+### [BONUS] Digital Wireframes & Mockups
+https://www.figma.com/file/KLVWvm0rdZ3kQF9E0CuYcw/Purrfect-Pal?type=design&node-id=1%3A8605&mode=design&t=q1w3pJ51MQXjb1kp-1
+### [BONUS] Interactive Prototype
+
+## Build Notes
+
+Here's a place for any other notes on the app, it's creation 
+process, or what you learned this unit!  
+
+For Milestone 2, include **2+ Videos/GIFs** of the build process here!
+
+## License
+
+Copyright **2024** **Noely Guzman, Mary Ramirez, Maria Santos Perez, Nhi Nguyen, Hsu Khaing Zar Lwin**
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
