@@ -27,7 +27,7 @@ The following REQUIRED files are included:
   - [X] App Overview (Milestone 1)
   - [X] App Spec (Milestone 1)
   - [X] Checked off 2+ completed features
-  - [] 2+ Videos/GIFs of build progress
+  - [X] 2+ Videos/GIFs of build progress
 
 - [ ] Our 🎥 Demo Video
   - [ ] We have also added the Demo Video Link to the Group Info Form on the course portal.
@@ -35,6 +35,12 @@ The following REQUIRED files are included:
 The following EXTRA features are implemented:
 
 - [ ] List anything else that you added to improve your submission!
+
+##  Gif Building Process
+<img src='bp3.gif' title='Video Demo' width='' alt='Video Demo' />
+<img src='bp1.gif' title='Video Demo' width='' alt='Video Demo' />
+<img src='bp2.gif' title='Video Demo' width='' alt='Video Demo' />
+
 
 ## 🎥 Demo Video
 
