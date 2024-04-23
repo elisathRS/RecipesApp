@@ -1,5 +1,13 @@
 # Recipe Explorer App
 
+
+## Table of Contents
+
+1. [App Overview](#App-Overview)
+2. [Product Spec](#Product-Spec)
+3. [Wireframes](#Wireframes)
+4. [Build Notes](#Build-Notes)
+
 ## App Overview
 
 ### Description
