@@ -23,26 +23,60 @@
         tools:text="Meal Title" />
 
     <TextView
+        android:id="@+id/categoryLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mealNameTextView"
+        android:text="Category:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
         android:id="@+id/categoryTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/mealNameTextView"
+        android:layout_below="@id/categoryLabelTextView"
         android:textSize="18sp"
         tools:text="Category: Unknown" />
+
+    <TextView
+        android:id="@+id/areaLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categoryTextView"
+        android:text="Area:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/areaTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/categoryTextView"
+        android:layout_below="@+id/areaLabelTextView"
         android:textSize="18sp"
         tools:text="Area: Unknown" />
 
     <TextView
-        android:id="@+id/instructionsTextView"
+        android:id="@+id/instructionsLabelTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/areaTextView"
+        android:text="Instructions:"
         android:textSize="18sp"
-        tools:text="Instructions: Unknown" />
+        android:textStyle="bold" />
+
+    <!-- ScrollView containing instructions -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instructionsLabelTextView">
+
+        <!-- Actual instructions TextView -->
+        <TextView
+            android:id="@+id/instructionsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            tools:text="Instructions: Unknown" />
+    </ScrollView>
 </RelativeLayout>
