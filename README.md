@@ -37,6 +37,7 @@ The following EXTRA features are implemented:
 - [ ] List anything else that you added to improve your submission!
 
 ##  Gif Building Process
+<img src='bp3.gif' title='Video Demo' width='' alt='Video Demo' />
 <img src='bp1.gif' title='Video Demo' width='' alt='Video Demo' />
 <img src='bp2.gif' title='Video Demo' width='' alt='Video Demo' />
 
