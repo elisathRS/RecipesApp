@@ -63,11 +63,11 @@ This spec outlines the core functionality and features of the Recipe Explorer Ap
 This spec outlines the core functionality and features of the Petfinder App, aiming to create a seamless and engaging experience for users looking to adopt pets or provide babysitting services.
 ## Wireframes
 
-<!-- Add picture of your hand sketched wireframes in this section -->
+<img src='Wireframes.png' title='Video Demo' width='' alt='Video Demo' />
 
 
 ### [BONUS] Digital Wireframes & Mockups
-https://www.figma.com/file/KLVWvm0rdZ3kQF9E0CuYcw/Purrfect-Pal?type=design&node-id=1%3A8605&mode=design&t=q1w3pJ51MQXjb1kp-1
+
 ### [BONUS] Interactive Prototype
 
 ## Build Notes
