@@ -37,8 +37,10 @@ The following EXTRA features are implemented:
 - [ ] List anything else that you added to improve your submission!
 
 ##  Gif Building Process
-<img src='buildingP1.gif' title='Video Demo' width='' alt='Video Demo' />
-<img src='BuildingP2.gif' title='Video Demo' width='' alt='Video Demo' />
+<img src='bp1.gif' title='Video Demo' width='' alt='Video Demo' />
+<img src='bp2.gif' title='Video Demo' width='' alt='Video Demo' />
+
+
 ## 🎥 Demo Video
 
 Here's a video that demos all of the app's implemented features:
