@@ -12,13 +12,13 @@
 
 ### Description
 
-The Recipe Explorer App is a user-friendly platform designed to help users discover and explore a vast collection of recipes. With its intuitive interface, users can easily browse through a curated list of recipes or search based on specific criteria such as cuisine type, dietary preferences, ingredients, and more. The app aims to simplify the process of finding and trying new recipes, providing users with a seamless experience to enhance their culinary adventures.
+The Recipe Explorer App is a user-friendly platform designed to help users discover and explore a vast collection of recipes. With its intuitive interface, users can easily search based on recipe name. The app aims to simplify the process of finding and trying new recipes, providing users with a seamless experience to enhance their culinary adventures.
 
 ### App Evaluation
 
 - **Category:** Lifestyle, Cooking, Food & Drink.
 - **Mobile:** This app is primarily designed for mobile devices such as smartphones and tablets. It leverages features like search functionality, camera integration for uploading food images, and notifications for updates on favorite recipes or new additions to the collection.
-- **Story:** Simplifies the process of discovering and trying new recipes by offering a comprehensive platform where users can effortlessly explore a diverse selection of culinary delights. From quick and easy weeknight meals to gourmet creations for special occasions, the app provides a wide range of recipes to suit every taste and occasion. Users can browse through various categories such as recipe name, ingredients, and category.
+- **Story:** Simplifies the process of discovering and trying new recipes by offering a comprehensive platform where users can effortlessly explore a diverse selection of culinary delights. From quick and easy weeknight meals to gourmet creations for special occasions, the app provides a wide range of recipes to suit every taste and occasion. Users can explore recipes by their titles.  
 - **Market:** Targeted at cooking enthusiasts, foodies, and individuals interested in exploring new culinary experiences. Appeals to a wide range of users, from home cooks to professional chefs, who are passionate about cooking and experimenting with different cuisines.
 - **Habit:** Users are encouraged to regularly browse the app for new recipe ideas, save their favorite recipes, and engage with the community by sharing their cooking adventures and feedback on recipes.
 - **Scope:** Initially moderate with potential for scaling as the user base and recipe collection grow. Could start locally or regionally with potential to expand nationally or internationally, catering to a global audience of food lovers.
@@ -28,9 +28,9 @@ The Recipe Explorer App is a user-friendly platform designed to help users disco
 ### 1. User Features (Required and Optional)
 
 **Required Features:**
-- User registration and profile setup.
-- Ability to scroll through a list of recipes and view basic information such as name and image. 
-- Search and filter recipes by name, category and ingredients.
+- User registration, login and log out.
+- Ability to scroll through a list of recipes and view basic information such as title and image. 
+- Search and filter recipes by their titles.
 - Recipe Details including photos,instructions, area, and category.
 
 
@@ -50,12 +50,12 @@ The Recipe Explorer App is a user-friendly platform designed to help users disco
 
 **Required Feature**
 
-- **User selects preferences (recipe name, ingredients, category)**
-  - => Displays a personalized list of recipes matching the selected criteria.
+- **User selects preferences**
+  - => Displays a personalized list of recipes matching the selected criteria(recipe title)
 - **User clicks on the recipe**
   - => Displays detailed information about the recipe, including category, step-by-step instructions,and the country or region where the recipe originates from.
 - **User login and register**
-  - => Users can create accounts and log into the app. 
+  - => Users can create accounts,sign in, and sign out of the app.
 
 This spec outlines the core functionality and features of the Recipe Explorer App, designed to offer users a seamless and immersive experience in discovering, exploring, and experimenting with a wide variety of culinary delights.
 
